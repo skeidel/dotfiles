@@ -3,10 +3,10 @@
 # Homebrew Formulae
 # https://github.com/Homebrew/homebrew
 declare -a HOMEBREW_FORMULAE=(
-		"coreutils"
-		"moreutils"
-		"gnu-sed --default-names"
-		"bash"
+    "coreutils"
+    "moreutils"
+    "gnu-sed --default-names"
+    "bash"
     "bash-completion"
     "git"
     "imagemagick --with-webp"
@@ -50,6 +50,46 @@ declare -a HOMEBREW_CASKS=(
 )
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+cmd_exists() {
+    [ -x "$(command -v "$1")" ] \
+        && printf 0 \
+        || printf 1
+}
+
+execute() {
+    $1 &> /dev/null
+    print_result $? "${2:-$1}"
+}
+
+print_error() {
+    # Print output in red
+    printf "\e[0;31m  [✖] $1 $2\e[0m\n"
+}
+
+print_info() {
+    # Print output in purple
+    printf "\n\e[0;35m $1\e[0m\n\n"
+}
+
+print_result() {
+    [ $1 -eq 0 ] \
+        && print_success "$2" \
+        || print_error "$2"
+
+    [ "$3" == "true" ] && [ $1 -ne 0 ] \
+        && exit
+}
+
+print_success() {
+    # Print output in green
+    printf "\e[0;32m  [✔] $1\e[0m\n"
+}
+
+print_question() {
+    # Print output in yellow
+    printf "\e[0;33m  [?] $1\e[0m"
+}
 
 install_applications() {
 
@@ -107,3 +147,5 @@ install_applications() {
     fi
 
 }
+
+install_applications
