@@ -26,6 +26,7 @@ declare -a HOMEBREW_FORMULAE=(
     "pv"
     "rename"
     "tree"
+    "autojump"
 )
 
 # Homebrew Casks
