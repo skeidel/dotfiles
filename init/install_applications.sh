@@ -47,6 +47,13 @@ declare -a HOMEBREW_CASKS=(
     "transmission"
     "virtualbox"
     "vlc"
+    "github"
+    "phpstorm"
+    "rubymine"
+    "skype"
+    "jdownloader"
+    "silverlight"
+    "plex-home-theater"
 )
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
