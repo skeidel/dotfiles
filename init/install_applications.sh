@@ -54,6 +54,8 @@ declare -a HOMEBREW_CASKS=(
     "jdownloader"
     "silverlight"
     "plex-home-theater"
+    "istat-menus"
+    "private-internet-access"
 )
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
