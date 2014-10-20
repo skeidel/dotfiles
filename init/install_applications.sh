@@ -57,6 +57,7 @@ declare -a HOMEBREW_CASKS=(
     "plex-home-theater"
     "istat-menus"
     "private-internet-access"
+    "sparkleshare"
 )
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
