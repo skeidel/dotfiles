@@ -157,3 +157,6 @@ install_applications() {
 }
 
 install_applications
+
+#brew tap homebrew/php
+#brew install php55 --with-apache
