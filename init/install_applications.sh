@@ -33,6 +33,7 @@ declare -a HOMEBREW_FORMULAE=(
 # https://github.com/caskroom/homebrew-cask
 declare -a HOMEBREW_CASKS=(
     "iterm2"
+    "sizeup"
     "sublime-text"
     "the-unarchiver"
     "torbrowser"
