@@ -1,0 +1,43 @@
+##
+# Host Database
+##
+
+# Local development sites
+127.0.0.1 providence.dev
+127.0.0.1 provenance.dev
+127.0.0.1 lhm.dev
+127.0.0.1 ahv.dev
+127.0.0.1 fernsehen.dev
+127.0.0.1 publicfernsehen.dev
+127.0.0.1 films.arsenal.dev
+127.0.0.1 allfilms.arsenal.dev
+
+127.0.0.1 localhost batman batman.local
+
+# BC
+255.255.255.255	broadcasthost
+
+# IPv6
+::1             localhost 
+fe80::1%lo0	localhost
+
+# Local dev sites (v6)
+fe80::1%lo0 providence.dev
+fe80::1%lo0 provenance.dev
+fe80::1%lo0 lhm.dev
+fe80::1%lo0 ahv.dev
+fe80::1%lo0 fernsehen.dev
+fe80::1%lo0 publicfernsehen.dev
+fe80::1%lo0 films.arsenal.dev
+fe80::1%lo0 allfilms.arsenal.dev
+
+# Shortcuts to external sites
+195.37.189.3 	sdk
+144.76.70.196	arsenal
+62.75.137.39	spk
+144.76.104.77	alhalqa
+
+# SDK
+10.0.0.4	www-wir-waren-so-frei-de-intern.kinemathek.de
+10.0.0.13	pg-server.kinemathek.de
+
