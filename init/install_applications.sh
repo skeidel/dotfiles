@@ -1,4 +1,5 @@
 #!/bin/bash
+export HOMEBREW_CASK_OPTS="--appdir=/Applications";
 
 # Homebrew Formulae
 # https://github.com/Homebrew/homebrew
