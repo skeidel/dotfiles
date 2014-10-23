@@ -1,3 +1,6 @@
+# set ulimit
+ulimit -n 2048
+
 # Make vim the default editor
 export EDITOR="vim";
 export VISUAL=vim
