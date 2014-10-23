@@ -27,6 +27,10 @@ declare -a HOMEBREW_FORMULAE=(
     "rename"
     "tree"
     "autojump"
+    "todo-txt"
+    "mysql"
+    "ffmpeg"
+    "graphicsmagick"
 )
 
 # Homebrew Casks
@@ -42,7 +46,6 @@ declare -a HOMEBREW_CASKS=(
     "vlc"
     "google-chrome"
     "firefox"
-    "libreoffice"
     "the-unarchiver"
     "transmission"
     "virtualbox"
@@ -160,3 +163,4 @@ install_applications
 
 #brew tap homebrew/php
 #brew install php55 --with-apache
+#brew install php55-mcrypt php55-memcached php55-apcu
