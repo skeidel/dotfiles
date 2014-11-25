@@ -6,6 +6,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications";
 declare -a HOMEBREW_FORMULAE=(
     "coreutils"
     "moreutils"
+    "findutils --with-default-names"
     "gnu-sed --default-names"
     "bash"
     "bash-completion"
@@ -15,7 +16,7 @@ declare -a HOMEBREW_FORMULAE=(
     "caskroom/cask/brew-cask"
     "vim --override-system-vi"
     "homebrew/dupes/screen"
-    "homebrew/dupes/grep"
+    "grep --with-default-names"
     "ack"
     "git"
     "imagemagick --with-webp"
