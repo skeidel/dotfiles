@@ -29,7 +29,6 @@ declare -a HOMEBREW_FORMULAE=(
     "rename"
     "tree"
     "autojump"
-    "todo-txt"
     "mysql"
     "ffmpeg"
     "graphicsmagick"
