@@ -9,7 +9,6 @@ alias -- -="cd -"
 alias dl="cd ~/Downloads"
 alias w="cd /web/"
 alias g="git"
-alias t='todo.sh'
 alias msql='mysql.server start'
 
 # Detect which `ls` flavor is in use
