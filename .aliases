@@ -108,5 +108,8 @@ command -v grunt > /dev/null && alias grunt="grunt --stack"
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
+# TheFuck (https://github.com/nvbn/thefuck)
+alias fuck='eval $(thefuck $(fc -ln -1)); history -r
+
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
