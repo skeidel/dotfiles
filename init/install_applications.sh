@@ -45,8 +45,6 @@ declare -a HOMEBREW_CASKS=(
     "transmission"
     "virtualbox"
     "vlc"
-    "google-chrome"
-    "firefox"
     "the-unarchiver"
     "transmission"
     "virtualbox"
@@ -56,9 +54,7 @@ declare -a HOMEBREW_CASKS=(
     "rubymine"
     "skype"
     "silverlight"
-    "plex-home-theater"
     "istat-menus"
-    "sparkleshare"
 )
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
