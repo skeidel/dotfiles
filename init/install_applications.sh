@@ -11,7 +11,6 @@ declare -a HOMEBREW_FORMULAE=(
     "bash"
     "bash-completion"
     "git"
-    "imagemagick --with-webp"
     "wget --enable-iri"
     "caskroom/cask/brew-cask"
     "vim --override-system-vi"
@@ -19,7 +18,6 @@ declare -a HOMEBREW_FORMULAE=(
     "grep --with-default-names"
     "ack"
     "git"
-    "imagemagick --with-webp"
     "lynx"
     "node"
     "p7zip"
@@ -29,25 +27,14 @@ declare -a HOMEBREW_FORMULAE=(
     "rename"
     "tree"
     "autojump"
-    "mysql"
-    "ffmpeg"
-    "graphicsmagick"
 )
 
 # Homebrew Casks
 # https://github.com/caskroom/homebrew-cask
 declare -a HOMEBREW_CASKS=(
     "iterm2"
-    "sizeup"
     "sublime-text"
     "the-unarchiver"
-    "transmission"
-    "virtualbox"
-    "vlc"
-    "github"
-    "skype"
-    "silverlight"
-    "istat-menus"
 )
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -133,7 +120,6 @@ install_applications() {
         printf "\n"
 
         # Homebrew casks
-        if [ $(brew list brew-cask &> /dev/null; printf $?) -eq 0 ]; then
 
             for i in ${!HOMEBREW_CASKS[*]}; do
                 tmp="${HOMEBREW_CASKS[$i]}"
@@ -143,7 +129,6 @@ install_applications() {
             done
 
             printf "\n"
-        fi
 
     fi
 

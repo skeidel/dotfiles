@@ -7,9 +7,8 @@ alias -- -="cd -"
 
 # Shortcuts
 alias dl="cd ~/Downloads"
-alias w="cd /web/"
+alias i="cd /Users/stefan/Documents/idagio"
 alias g="git"
-alias msql='mysql.server start'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -41,7 +40,7 @@ alias week='date +%V'
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup'
 
 # IP addresses
 alias localip="ipconfig getifaddr en0"
@@ -107,9 +106,6 @@ command -v grunt > /dev/null && alias grunt="grunt --stack"
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-
-# TheFuck (https://github.com/nvbn/thefuck)
-alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
