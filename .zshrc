@@ -1,4 +1,4 @@
-#source .path
+source ~/.path
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/stefan/.oh-my-zsh"
@@ -96,7 +96,7 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source .aliases
+source ~/.aliases
 
 # Super secret environment variables that better not be under version control
-source .extra
+source ~/.extra
