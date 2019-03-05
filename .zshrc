@@ -118,3 +118,6 @@ source ~/.aliases
 
 # Super secret environment variables that better not be under version control
 source ~/.extra
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
