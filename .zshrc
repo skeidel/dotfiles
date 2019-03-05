@@ -119,5 +119,6 @@ source ~/.aliases
 # Super secret environment variables that better not be under version control
 source ~/.extra
 
+# Some more plugins
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
