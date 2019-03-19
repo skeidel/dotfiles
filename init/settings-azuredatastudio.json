@@ -1,0 +1,13 @@
+{
+    "workbench.enablePreviewFeatures": true,
+    "workbench.colorTheme": "Solarized Dark",
+    "editor.fontSize": 12,
+    "terminal.integrated.fontSize": 13,
+    "editor.fontFamily": "\"Meslo LG L DZ for Powerline\"",
+    "editor.fontLigatures": true,
+    "markdown.preview.fontSize": 13,
+    "editor.fontWeight": "800",
+    "files.trimTrailingWhitespace": true,
+    "terminal.integrated.fontWeight": "800",
+    "window.zoomLevel": 1.1
+}
