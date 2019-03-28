@@ -1,0 +1,2 @@
+\set dbsize 'select owner, host, diskno, used, capacity, (used-tossed)/capacity::numeric *100 as pctused from stv_partitions order by owner;'
+\set longqueries 'SELECT pid, now() - pg_stat_activity.query_start AS duration, query, state FROM pg_stat_activity WHERE (now() - pg_stat_activity.query_start) > interval \'1 minutes\';'
