@@ -118,6 +118,7 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.aliases
+source ~/.exports
 
 # Super secret environment variables that better not be under version control
 source ~/.extra
