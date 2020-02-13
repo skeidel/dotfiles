@@ -1,3 +1,5 @@
+source ~/.path
+
 # set emacs bindings
 bindkey -e
 
@@ -116,6 +118,10 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.aliases
+source ~/.exports
+
+# Super secret environment variables that better not be under version control
+source ~/.extra
 
 # Some more plugins
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
