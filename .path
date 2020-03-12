@@ -4,3 +4,6 @@ export PATH=$(brew --prefix findutils)/bin:$PATH
 export PATH=/Users/stefan/.local/bin:$PATH
 export PATH="/opt/anaconda3/bin":$PATH
 export PATH=$PATH:"$HOME/.rvm/bin"
+
+export PYTHONPATH=/Users/stefan/Documents/idagio/idagio-analytics-scripts
+export JUPYTER_PATH=$PYTHONPATH
