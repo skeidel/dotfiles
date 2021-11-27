@@ -85,6 +85,8 @@ setopt HIST_BEEP                 # Beep when accessing nonexistent history.
 plugins=(
     git
     z
+    terraform
+    zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -123,9 +125,9 @@ source ~/.exports
 # Super secret environment variables that better not be under version control
 source ~/.extra
 
-# Some more plugins
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# added by Snowflake SnowSQL installer v1.2
+export PATH=/Applications/SnowSQL.app/Contents/MacOS:$PATH
 
-# :shrug:
-source /Users/stefan/Library/Preferences/org.dystroy.broot/launcher/bash/br
+# Created by `pipx` on 2021-06-17 04:35:50
+export PATH="$PATH:/Users/stefan.keidel/.local/bin"
+[[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
