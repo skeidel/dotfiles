@@ -160,5 +160,7 @@
 
 [user]
 
-	name = Stefan
-	email = 1188614+stefankeidel@users.noreply.github.com
+	name = Stefan Keidel
+	email = stefan.keidel@lichtblick.de
+[credential]
+	helper = store
