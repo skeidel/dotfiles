@@ -63,6 +63,9 @@ alias reload="exec $SHELL -l"
 alias o="open ."
 
 # Run things on Redshift
-redshift() {
-    psql ${ANALYTICS_REDSHIFT_DWH_DB} -v ON_ERROR_STOP=1 --single-transaction --file=$1
+tfip() {
+    tf import -var-file=prod.tfvars $1 $2
 }
+
+# alias dbt="poetry run dbt"
+# alias data-diff="poetry run data-diff"
