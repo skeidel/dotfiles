@@ -29,3 +29,4 @@ export PYTHONBREAKPOINT="pudb.set_trace";
 
 export IDAGIO_CONFIG_FILENAME=idagio.conf
 
+export BAT_THEME="TwoDark"

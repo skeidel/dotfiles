@@ -86,6 +86,7 @@ plugins=(
     git
     z
     terraform
+    poetry
     zsh-autosuggestions
 )
 
@@ -128,6 +129,47 @@ source ~/.extra
 # added by Snowflake SnowSQL installer v1.2
 export PATH=/Applications/SnowSQL.app/Contents/MacOS:$PATH
 
-# Created by `pipx` on 2021-06-17 04:35:50
-export PATH="$PATH:/Users/stefan.keidel/.local/bin"
-[[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
+# vterm_printf(){
+#     if [ -n "$TMUX" ] && ([ "${TERM%%-*}" = "tmux" ] || [ "${TERM%%-*}" = "screen" ] ); then
+#         # Tell tmux to pass the escape sequences through
+#         printf "\ePtmux;\e\e]%s\007\e\\" "$1"
+#     elif [ "${TERM%%-*}" = "screen" ]; then
+#         # GNU screen (screen, screen-256color, screen-256color-bce)
+#         printf "\eP\e]%s\007\e\\" "$1"
+#     else
+#         printf "\e]%s\e\\" "$1"
+#     fi
+# }
+
+# if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
+#     alias clear='vterm_printf "51;Evterm-clear-scrollback";tput clear'
+# fi
+
+# vterm_prompt_end() {
+#     vterm_printf "51;A$(whoami)@$(hostname):$(pwd)";
+# }
+# setopt PROMPT_SUBST
+# PROMPT=$PROMPT'%{$(vterm_prompt_end)%}'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+FZF_DBT_PATH=~/.fzf-dbt/fzf-dbt.sh
+if [[ ! -f /Users/stefan.keidel/.fzf-dbt/fzf-dbt.sh ]]; then
+    FZF_DBT_DIR=/Users/stefan.keidel/.fzf-dbt
+    print -P "%F{green}Installing fzf-dbt into %f"
+    mkdir -p $FZF_DBT_DIR
+    command curl -L https://raw.githubusercontent.com/Infused-Insight/fzf-dbt/main/src/fzf_dbt.sh > /Users/stefan.keidel/.fzf-dbt/fzf-dbt.sh &&         print -P "%F{green}Installation successful.%f" ||         print -P "%F{red}The download has failed.%f"
+fi
+
+export FZF_DBT_PREVIEW_CMD='bat --theme "Solarized (dark)" --color=always --style=numbers {}'
+export FZF_DBT_HEIGHT=80%
+source /Users/stefan.keidel/.fzf-dbt/fzf-dbt.sh
+
+
+# PyEnv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=243'
+source /Users/stefan.keidel/.config/broot/launcher/bash/br
